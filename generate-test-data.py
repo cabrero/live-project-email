@@ -29,8 +29,8 @@ n = fake.random_int(min=5, max= 273)
 for _ in range(0, n):
     print(
         fake.email(), #Email
-        f'"{fake.first_name()}"', # Last Name
-        f'"{fake.last_name()}"', # First Name
+        f'"{fake.last_name()}"', # Last Name
+        f'"{fake.first_name()}"', # First Name
         fake.random_int(min=0, max=10), # Problem 1 score
         f'"{fake.text(max_nb_chars= 40)}"', # Problem 1 comments
         fake.random_int(min=0, max=10), # Problem 2 score
