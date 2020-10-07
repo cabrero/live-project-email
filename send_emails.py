@@ -10,8 +10,14 @@ if len(sys.argv) != 2:
     
 filename = sys.argv[1]
 
+data = {}
+
 with open(filename, newline= '') as f:
     reader = csv.reader(f, skipinitialspace= True, quotechar= '"')
     for row in reader:
         print(row, sep= ' , ')
         assert len(row) == 9
+        email, *student_data = row 
+        data[email] = student_data
+
+print(data)
